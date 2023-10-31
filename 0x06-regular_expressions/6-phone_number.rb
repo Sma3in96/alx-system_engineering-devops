@@ -6,4 +6,4 @@ pattern = /^\d{10}$/
 
 matches = arg.scan(pattern)
 
-puts "#{matches.join()}"
+puts matches
