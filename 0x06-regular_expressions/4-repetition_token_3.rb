@@ -2,7 +2,7 @@
 
 arg = ARGV[0]
 
-pattern = /hb(t|n)/
+pattern = /hbt*n/
 
 matches = arg.scan(pattern)
 
