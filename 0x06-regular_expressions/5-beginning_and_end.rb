@@ -2,8 +2,8 @@
 
 arg = ARGV[0]
 
-pattern = /^h\w*n$/
+pattern = /^h\wn$/
 
 matches = arg.scan(pattern)
 
-puts "#{matches.join()}"
+puts matches
