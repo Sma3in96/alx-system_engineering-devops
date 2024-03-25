@@ -2,8 +2,8 @@
 """   get data from an API """
 
 import json
-from sys import argv
 import requests
+from sys import argv
 
 
 def getname(id):
