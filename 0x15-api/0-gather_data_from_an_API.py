@@ -33,7 +33,7 @@ def gettask(user_id):
 
 if __name__ == '__main__':
 
-    API_url = 'https://jsonplaceholder.typicode.com/'
+    url = 'https://jsonplaceholder.typicode.com/'
 
     if len(argv) == 2:
         NUMBER_OF_DONE_TASKS = gettask(int(argv[1]))[0]
