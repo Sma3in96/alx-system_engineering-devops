@@ -33,7 +33,7 @@ if __name__ == '__main__':
 
     if len(argv) == 2:
         with open(f"{argv[1]}.csv", 'a') as file:
-            writer = csv.writer(file)
+            writer = csv.writer(file, delimiter=",", quoting=csv.QUOTE_ALL)
             for task in gettask(int(argv[1])):
-                writer.writerow([argv[1], getname(int(argv[1])),
+                writer.writerow([str(argv[1]), getname(int(argv[1])),
                                 task[1], task[0]])
