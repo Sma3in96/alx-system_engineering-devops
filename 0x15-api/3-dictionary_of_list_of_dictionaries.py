@@ -8,11 +8,11 @@ import requests
 def getids():
     ''' get user name '''
     ids_list = list()
-    x = requests.get("/".join([url, "users"]))
+    x = requests.get("/".join([url, "todos"]))
     data = json.loads(x.content)
     for d in data:
-        ids_list.append(d.get('id'))
-    return ids_list
+        ids_list.append(d.get('userId'))
+    return list(set(ids_list))
 
 
 def getname(id):
@@ -47,4 +47,3 @@ if __name__ == '__main__':
         for id in getids():
             dict_user_todo[str(id)] = gettask(int(id))
         json.dump(dict_user_todo, file)
-        
