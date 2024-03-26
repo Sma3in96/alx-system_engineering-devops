@@ -36,4 +36,3 @@ if __name__ == '__main__':
     if len(argv) == 2:
         with open(f"{argv[1]}.json", 'a', encoding="utf-8") as file:
             json.dump({str(argv[1]): gettask(int(argv[1]))}, file)
-                
