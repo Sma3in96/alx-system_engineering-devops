@@ -1,15 +1,11 @@
 #!/usr/bin/python3
 """Return How many subs."""
-
 import requests
-import json
-
-redit_url = 'https://www.reddit.com/r/'
 
 
 def number_of_subscribers(subreddit):
     """Return number of subs."""
-
+    redit_url = 'https://www.reddit.com/r/'
     url = f"{redit_url}/{subreddit}/about.json"
 
     headers = {
