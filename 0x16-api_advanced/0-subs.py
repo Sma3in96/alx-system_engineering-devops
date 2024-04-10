@@ -12,7 +12,7 @@ def number_of_subscribers(subreddit):
     Returns:
         int: number of subscribers
         """
-    header = {"User-Agent": "MyCustomUserAgent/1.0"}
+    header = {"User-Agent": "custom"}
     get_url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
     results = requests.get(
         get_url,

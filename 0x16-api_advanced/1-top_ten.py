@@ -4,7 +4,7 @@ this doc for module
 """
 import requests
 
-headers = {"User-Agent": "MyCustomUserAgent/1.0"}
+headers = {"User-Agent": "custom"}
 
 
 def top_ten(subreddit):
