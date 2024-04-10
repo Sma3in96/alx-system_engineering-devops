@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module that consumes the Reddit API and returns a list containing the
+""" Module that consumes the Reddit API and returns a list containing the
 titles of all hot articles for a given subreddit."""
 import requests
 
@@ -13,9 +13,9 @@ def number_of_subscribers(subreddit):
 
     Returns:
         int: The number of subscribers.
-    """
+        """
     redit_url = 'https://www.reddit.com/r/'
-    url = f"{redit_url}/{subreddit}/about.json"
+    url = "{}/{}/about.json".format(redit_url, subreddit)
 
     headers = {
         'User-Agent':
