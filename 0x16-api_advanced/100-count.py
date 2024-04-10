@@ -1,16 +1,14 @@
 #!/usr/bin/python3
-""" Module for a function that queries the Reddit API recursively."""
+""" A module with a recursive Reddit API querying function."""
 
 
 import requests
 
 
 def count_words(subreddit, word_list, after='', word_dict={}):
-    """ A function that queries the Reddit API parses the title of
-    all hot articles, and prints a sorted count of given keywords
-    (case-insensitive, delimited by spaces.
-    Javascript should count as javascript, but java should not).
-    If no posts match or the subreddit is invalid, it prints nothing.
+    """ A JavaScript function interacts with the Reddit API,
+    retrieves the titles of all currently popular articles,
+    and then generates a sorted count of specified keywords.
     """
 
     if not word_dict:
