@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#gunicorn interttuped
+pgrep gunicorn | xargs -I {} kill -HUP {}
